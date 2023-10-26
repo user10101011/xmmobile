@@ -43,7 +43,8 @@ struct QuestionView: View {
                     .disabled(viewStore.submissionStatus[viewStore.elementCounter] ?? false)
                 
                 Button {
-                    viewStore.send(.submitButtonDidTap)
+                    let answer = Answer(id: viewStore.elementCounter, answer: viewStore.answerInput)
+                    viewStore.send(.submitButtonDidTap(answer))
                     viewStore.send(.setAnswerInput(""))
                 } label: {
                     Text(viewStore.submissionStatus[viewStore.elementCounter] ?? false ? "Alredy submitted" : "Submit")

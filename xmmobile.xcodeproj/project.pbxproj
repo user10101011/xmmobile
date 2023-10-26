@@ -17,9 +17,10 @@
 		C1433DE32AE9A90500E8F6F8 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DE22AE9A90500E8F6F8 /* QuestionView.swift */; };
 		C1433DE52AE9A92300E8F6F8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DE42AE9A92300E8F6F8 /* Question.swift */; };
 		C1433DEA2AE9BC6300E8F6F8 /* SurveyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DE92AE9BC6300E8F6F8 /* SurveyClient.swift */; };
-		C1433DF22AE9E23300E8F6F8 /* xmmobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DF12AE9E23300E8F6F8 /* xmmobileTests.swift */; };
+		C1433DF22AE9E23300E8F6F8 /* 01-xmmobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DF12AE9E23300E8F6F8 /* 01-xmmobileTests.swift */; };
 		C1433DFA2AE9E84B00E8F6F8 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DF92AE9E84B00E8F6F8 /* Answer.swift */; };
 		C1433DFE2AEA0C4900E8F6F8 /* SubmissionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DFD2AEA0C4900E8F6F8 /* SubmissionClient.swift */; };
+		C1E301082AEA858100030EDC /* 02-xmmobileTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E301072AEA858100030EDC /* 02-xmmobileTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +45,10 @@
 		C1433DE42AE9A92300E8F6F8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C1433DE92AE9BC6300E8F6F8 /* SurveyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyClient.swift; sourceTree = "<group>"; };
 		C1433DEF2AE9E23300E8F6F8 /* xmmobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xmmobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1433DF12AE9E23300E8F6F8 /* xmmobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xmmobileTests.swift; sourceTree = "<group>"; };
+		C1433DF12AE9E23300E8F6F8 /* 01-xmmobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-xmmobileTests.swift"; sourceTree = "<group>"; };
 		C1433DF92AE9E84B00E8F6F8 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		C1433DFD2AEA0C4900E8F6F8 /* SubmissionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionClient.swift; sourceTree = "<group>"; };
+		C1E301072AEA858100030EDC /* 02-xmmobileTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02-xmmobileTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +140,8 @@
 		C1433DF02AE9E23300E8F6F8 /* xmmobileTests */ = {
 			isa = PBXGroup;
 			children = (
-				C1433DF12AE9E23300E8F6F8 /* xmmobileTests.swift */,
+				C1433DF12AE9E23300E8F6F8 /* 01-xmmobileTests.swift */,
+				C1E301072AEA858100030EDC /* 02-xmmobileTest.swift */,
 			);
 			path = xmmobileTests;
 			sourceTree = "<group>";
@@ -274,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1433DF22AE9E23300E8F6F8 /* xmmobileTests.swift in Sources */,
+				C1E301082AEA858100030EDC /* 02-xmmobileTest.swift in Sources */,
+				C1433DF22AE9E23300E8F6F8 /* 01-xmmobileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

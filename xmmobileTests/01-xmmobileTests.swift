@@ -11,7 +11,7 @@ import ComposableArchitecture
 @testable import xmmobile
 
 @MainActor
-final class xmmobileTests: XCTestCase {
+final class _1_xmmobileTests: XCTestCase {
     func testGetSurveyRequest() async {
         let store = TestStore(initialState: SurveyStartReducer.State()) {
             SurveyStartReducer()
@@ -31,23 +31,5 @@ final class xmmobileTests: XCTestCase {
         }
     }
     
-    func testPostSubmissionFailedRequest() async {
-        let store = TestStore(initialState: QuestionReducer.State()) {
-            QuestionReducer()
-        } withDependencies: {
-            $0.submissionClient.post = {
-                $0.0
-            }
-        }
-        
-        await store.send(.submitButtonDidTap) {
-            $0.isLoading = true
-        }
-        
-        await store.receive(.submissionResponse(1)) {
-            $0.isLoading = false
-            $0.submissionStatus = [1: false]
-            $0.successfulSubmisionsCount = 0
-        }
-    }
+    
 }

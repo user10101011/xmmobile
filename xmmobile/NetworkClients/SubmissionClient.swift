@@ -9,14 +9,14 @@ import Foundation
 import ComposableArchitecture
 
 struct SubmissionClient {
-    var post: ((Int, String)) async throws -> Int
+    var post: (Answer) async throws -> Int
 }
 
 extension SubmissionClient: DependencyKey {
     static let liveValue: SubmissionClient = Self(post: { payload in
         let stringUrl = "https://xm-assignment.web.app/question/submit"
         if let url = URL(string: stringUrl) {
-            let json: [String: Any] = ["id" : payload.0, "answer" : payload.1]
+            let json: [String: Any] = ["id" : payload.id, "answer" : payload.answer]
             let jsonData = try? JSONSerialization.data(withJSONObject: json)
             
             var request = URLRequest(url: url)

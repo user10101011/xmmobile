@@ -22,7 +22,7 @@ struct QuestionReducer: Reducer {
         case nextButtonDidTap
         case backButtonDidTap
         case setAnswerInput(String)
-        case submitButtonDidTap
+        case submitButtonDidTap(Answer)
         case submissionResponse(Int)
     }
     
@@ -41,12 +41,10 @@ struct QuestionReducer: Reducer {
                 state.answerInput = input
                 state.isSubmitButtonDisabled = input.isEmpty
                 return .none
-            case .submitButtonDidTap:
+            case let .submitButtonDidTap(answer):
                 state.isLoading = true
-                let currentElementIndex = state.elementCounter
-                let answer = state.answerInput
                 return .run { send in
-                    try await send(.submissionResponse(self.submissionClient.post((currentElementIndex, answer))))
+                    try await send(.submissionResponse(self.submissionClient.post((answer))))
                 }
             case let .submissionResponse(statusCode):
                 state.isLoading = false
