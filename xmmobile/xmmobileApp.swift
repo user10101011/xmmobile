@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ComposableArchitecture
+import XCTestDynamicOverlay
 
 @main
 struct xmmobileApp: App {
@@ -16,7 +17,9 @@ struct xmmobileApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SurveyStartView(store: xmmobileApp.store)
+            if !_XCTIsTesting {
+                SurveyStartView(store: xmmobileApp.store)
+            }
         }
     }
 }

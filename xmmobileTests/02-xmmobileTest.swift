@@ -12,12 +12,12 @@ import ComposableArchitecture
 
 @MainActor
 final class _2_xmmobileTest: XCTestCase {
-    func testPostSubmissionRequest() async {
+    func testPostSubmissionFailedRequest() async {
         let store = TestStore(initialState: QuestionReducer.State()) {
             QuestionReducer()
         } withDependencies: {
-            $0.submissionClient.post = {
-                $0.id
+            $0.submissionClient.post = { statusCode in
+                400
             }
         }
         
@@ -25,9 +25,30 @@ final class _2_xmmobileTest: XCTestCase {
             $0.isLoading = true
         }
         
-        await store.receive(.submissionResponse(1)) {
+        await store.receive(.submissionResponse(400)) {
             $0.isLoading = false
+            $0.successfulSubmisionsCount = 0
             $0.submissionStatus = [1: false]
+        }
+    }
+    
+    func testPostSubmissionSucceedRequest() async {
+        let store = TestStore(initialState: QuestionReducer.State()) {
+            QuestionReducer()
+        } withDependencies: {
+            $0.submissionClient.post = { statusCode in
+                200
+            }
+        }
+        
+        await store.send(.submitButtonDidTap(Answer(id: 1, answer: "Grey"))) {
+            $0.isLoading = true
+        }
+        
+        await store.receive(.submissionResponse(200)) {
+            $0.isLoading = false
+            $0.successfulSubmisionsCount = 1
+            $0.submissionStatus = [1: true]
         }
     }
 }
