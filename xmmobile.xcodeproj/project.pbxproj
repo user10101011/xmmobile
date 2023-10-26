@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1433D5E2AE859B700E8F6F8 /* xmmobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433D5D2AE859B700E8F6F8 /* xmmobileApp.swift */; };
+		C1433D622AE859BA00E8F6F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1433D612AE859BA00E8F6F8 /* Assets.xcassets */; };
+		C1433D652AE859BA00E8F6F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1433D642AE859BA00E8F6F8 /* Preview Assets.xcassets */; };
+		C1433DDB2AE992B500E8F6F8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = C1433DDA2AE992B500E8F6F8 /* ComposableArchitecture */; };
+		C1433DDD2AE993DD00E8F6F8 /* SurveyStartReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DDC2AE993DD00E8F6F8 /* SurveyStartReducer.swift */; };
+		C1433DDF2AE9A79C00E8F6F8 /* SurveyStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DDE2AE9A79C00E8F6F8 /* SurveyStartView.swift */; };
+		C1433DE12AE9A88400E8F6F8 /* QuestionReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DE02AE9A88400E8F6F8 /* QuestionReducer.swift */; };
+		C1433DE32AE9A90500E8F6F8 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DE22AE9A90500E8F6F8 /* QuestionView.swift */; };
+		C1433DE52AE9A92300E8F6F8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DE42AE9A92300E8F6F8 /* Question.swift */; };
+		C1433DEA2AE9BC6300E8F6F8 /* SurveyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DE92AE9BC6300E8F6F8 /* SurveyClient.swift */; };
+		C1433DF22AE9E23300E8F6F8 /* xmmobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DF12AE9E23300E8F6F8 /* xmmobileTests.swift */; };
+		C1433DFA2AE9E84B00E8F6F8 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DF92AE9E84B00E8F6F8 /* Answer.swift */; };
+		C1433DFE2AEA0C4900E8F6F8 /* SubmissionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1433DFD2AEA0C4900E8F6F8 /* SubmissionClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1433DF32AE9E23300E8F6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1433D522AE859B700E8F6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1433D592AE859B700E8F6F8;
+			remoteInfo = xmmobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1433D5A2AE859B700E8F6F8 /* xmmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1433D5D2AE859B700E8F6F8 /* xmmobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xmmobileApp.swift; sourceTree = "<group>"; };
+		C1433D612AE859BA00E8F6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1433D642AE859BA00E8F6F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1433DDC2AE993DD00E8F6F8 /* SurveyStartReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStartReducer.swift; sourceTree = "<group>"; };
+		C1433DDE2AE9A79C00E8F6F8 /* SurveyStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStartView.swift; sourceTree = "<group>"; };
+		C1433DE02AE9A88400E8F6F8 /* QuestionReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionReducer.swift; sourceTree = "<group>"; };
+		C1433DE22AE9A90500E8F6F8 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		C1433DE42AE9A92300E8F6F8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		C1433DE92AE9BC6300E8F6F8 /* SurveyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyClient.swift; sourceTree = "<group>"; };
+		C1433DEF2AE9E23300E8F6F8 /* xmmobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xmmobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1433DF12AE9E23300E8F6F8 /* xmmobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xmmobileTests.swift; sourceTree = "<group>"; };
+		C1433DF92AE9E84B00E8F6F8 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		C1433DFD2AEA0C4900E8F6F8 /* SubmissionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1433D572AE859B700E8F6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1433DDB2AE992B500E8F6F8 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1433DEC2AE9E23300E8F6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1433D512AE859B700E8F6F8 = {
+			isa = PBXGroup;
+			children = (
+				C1433D5C2AE859B700E8F6F8 /* xmmobile */,
+				C1433DF02AE9E23300E8F6F8 /* xmmobileTests */,
+				C1433D5B2AE859B700E8F6F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1433D5B2AE859B700E8F6F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1433D5A2AE859B700E8F6F8 /* xmmobile.app */,
+				C1433DEF2AE9E23300E8F6F8 /* xmmobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1433D5C2AE859B700E8F6F8 /* xmmobile */ = {
+			isa = PBXGroup;
+			children = (
+				C1433D5D2AE859B700E8F6F8 /* xmmobileApp.swift */,
+				C1433DE72AE9A94F00E8F6F8 /* SurveyStart */,
+				C1433DE62AE9A93700E8F6F8 /* Question */,
+				C1433DF82AE9E82500E8F6F8 /* Models */,
+				C1433DE82AE9BC4A00E8F6F8 /* NetworkClients */,
+				C1433D612AE859BA00E8F6F8 /* Assets.xcassets */,
+				C1433D632AE859BA00E8F6F8 /* Preview Content */,
+			);
+			path = xmmobile;
+			sourceTree = "<group>";
+		};
+		C1433D632AE859BA00E8F6F8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C1433D642AE859BA00E8F6F8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1433DE62AE9A93700E8F6F8 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				C1433DE02AE9A88400E8F6F8 /* QuestionReducer.swift */,
+				C1433DE22AE9A90500E8F6F8 /* QuestionView.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		C1433DE72AE9A94F00E8F6F8 /* SurveyStart */ = {
+			isa = PBXGroup;
+			children = (
+				C1433DDC2AE993DD00E8F6F8 /* SurveyStartReducer.swift */,
+				C1433DDE2AE9A79C00E8F6F8 /* SurveyStartView.swift */,
+			);
+			path = SurveyStart;
+			sourceTree = "<group>";
+		};
+		C1433DE82AE9BC4A00E8F6F8 /* NetworkClients */ = {
+			isa = PBXGroup;
+			children = (
+				C1433DE92AE9BC6300E8F6F8 /* SurveyClient.swift */,
+				C1433DFD2AEA0C4900E8F6F8 /* SubmissionClient.swift */,
+			);
+			path = NetworkClients;
+			sourceTree = "<group>";
+		};
+		C1433DF02AE9E23300E8F6F8 /* xmmobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1433DF12AE9E23300E8F6F8 /* xmmobileTests.swift */,
+			);
+			path = xmmobileTests;
+			sourceTree = "<group>";
+		};
+		C1433DF82AE9E82500E8F6F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1433DE42AE9A92300E8F6F8 /* Question.swift */,
+				C1433DF92AE9E84B00E8F6F8 /* Answer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1433D592AE859B700E8F6F8 /* xmmobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1433D682AE859BA00E8F6F8 /* Build configuration list for PBXNativeTarget "xmmobile" */;
+			buildPhases = (
+				C1433D562AE859B700E8F6F8 /* Sources */,
+				C1433D572AE859B700E8F6F8 /* Frameworks */,
+				C1433D582AE859B700E8F6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xmmobile;
+			packageProductDependencies = (
+				C1433DDA2AE992B500E8F6F8 /* ComposableArchitecture */,
+			);
+			productName = xmmobile;
+			productReference = C1433D5A2AE859B700E8F6F8 /* xmmobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1433DEE2AE9E23300E8F6F8 /* xmmobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1433DF52AE9E23300E8F6F8 /* Build configuration list for PBXNativeTarget "xmmobileTests" */;
+			buildPhases = (
+				C1433DEB2AE9E23300E8F6F8 /* Sources */,
+				C1433DEC2AE9E23300E8F6F8 /* Frameworks */,
+				C1433DED2AE9E23300E8F6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1433DF42AE9E23300E8F6F8 /* PBXTargetDependency */,
+			);
+			name = xmmobileTests;
+			productName = xmmobileTests;
+			productReference = C1433DEF2AE9E23300E8F6F8 /* xmmobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1433D522AE859B700E8F6F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					C1433D592AE859B700E8F6F8 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C1433DEE2AE9E23300E8F6F8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = C1433D592AE859B700E8F6F8;
+					};
+				};
+			};
+			buildConfigurationList = C1433D552AE859B700E8F6F8 /* Build configuration list for PBXProject "xmmobile" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1433D512AE859B700E8F6F8;
+			packageReferences = (
+				C1433DD92AE992B500E8F6F8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = C1433D5B2AE859B700E8F6F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1433D592AE859B700E8F6F8 /* xmmobile */,
+				C1433DEE2AE9E23300E8F6F8 /* xmmobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1433D582AE859B700E8F6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1433D652AE859BA00E8F6F8 /* Preview Assets.xcassets in Resources */,
+				C1433D622AE859BA00E8F6F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1433DED2AE9E23300E8F6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1433D562AE859B700E8F6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1433D5E2AE859B700E8F6F8 /* xmmobileApp.swift in Sources */,
+				C1433DEA2AE9BC6300E8F6F8 /* SurveyClient.swift in Sources */,
+				C1433DE12AE9A88400E8F6F8 /* QuestionReducer.swift in Sources */,
+				C1433DDD2AE993DD00E8F6F8 /* SurveyStartReducer.swift in Sources */,
+				C1433DE32AE9A90500E8F6F8 /* QuestionView.swift in Sources */,
+				C1433DE52AE9A92300E8F6F8 /* Question.swift in Sources */,
+				C1433DDF2AE9A79C00E8F6F8 /* SurveyStartView.swift in Sources */,
+				C1433DFE2AEA0C4900E8F6F8 /* SubmissionClient.swift in Sources */,
+				C1433DFA2AE9E84B00E8F6F8 /* Answer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1433DEB2AE9E23300E8F6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1433DF22AE9E23300E8F6F8 /* xmmobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1433DF42AE9E23300E8F6F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1433D592AE859B700E8F6F8 /* xmmobile */;
+			targetProxy = C1433DF32AE9E23300E8F6F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C1433D662AE859BA00E8F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1433D672AE859BA00E8F6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1433D692AE859BA00E8F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"xmmobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 546MUVWFF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexanderbakhmut.xmmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1433D6A2AE859BA00E8F6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"xmmobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 546MUVWFF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexanderbakhmut.xmmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1433DF62AE9E23300E8F6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 546MUVWFF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexanderbakhmut.xmmobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xmmobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/xmmobile";
+			};
+			name = Debug;
+		};
+		C1433DF72AE9E23300E8F6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 546MUVWFF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alexanderbakhmut.xmmobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xmmobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/xmmobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1433D552AE859B700E8F6F8 /* Build configuration list for PBXProject "xmmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1433D662AE859BA00E8F6F8 /* Debug */,
+				C1433D672AE859BA00E8F6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1433D682AE859BA00E8F6F8 /* Build configuration list for PBXNativeTarget "xmmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1433D692AE859BA00E8F6F8 /* Debug */,
+				C1433D6A2AE859BA00E8F6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1433DF52AE9E23300E8F6F8 /* Build configuration list for PBXNativeTarget "xmmobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1433DF62AE9E23300E8F6F8 /* Debug */,
+				C1433DF72AE9E23300E8F6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1433DD92AE992B500E8F6F8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1433DDA2AE992B500E8F6F8 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1433DD92AE992B500E8F6F8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C1433D522AE859B700E8F6F8 /* Project object */;
+}
